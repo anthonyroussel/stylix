@@ -45,6 +45,11 @@ in {
         package = pkgs.adw-gtk3;
         name = "adw-gtk3";
       };
+      cursorTheme = {
+        package = config.stylix.cursor.package;
+        name = config.stylix.cursor.name;
+        size = config.stylix.cursor.size;
+      };
     };
 
     xdg.configFile = {
